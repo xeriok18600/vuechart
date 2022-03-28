@@ -1,0 +1,36 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.btn {
+  @apply h-16 w-full border bg-blue-600 py-1 text-white rounded;
+}
+
+.btn:disabled {
+  @apply bg-gray-200;
+  cursor: not-allowed;
+}
+
+.card {
+  max-width: 374px;
+  max-height: 49%;
+  width: 100%;
+  @apply border-2 p-4  h-full;
+}
+
+.circle {
+  max-width: 80%;
+  max-height: 80%;
+  @apply rounded-full w-60 h-60 flex items-center justify-center mx-auto text-2xl;
+}
+
+input, select {
+  max-height: 32px;
+  @apply px-2;
+}
+
+.bg-warning {
+  background-color: #ff5722;
+}
